@@ -1,7 +1,7 @@
 'use strict';
 
 const PluginError = require('plugin-error');
-const {CLIEngine} = require('eslint');
+const {ESLint} = require('eslint');
 const {
 	createIgnoreResult,
 	filterResult,
@@ -25,7 +25,7 @@ const {relative} = require('path');
  */
 function gulpEslint(options) {
 	options = migrateOptions(options) || {};
-	const linter = new CLIEngine(options);
+	const linter = new ESLint(options);
 
 	return transform((file, enc, cb) => {
 		const filePath = relative(process.cwd(), file.path);
@@ -59,7 +59,7 @@ function gulpEslint(options) {
 		let result;
 
 		try {
-			result = linter.executeOnText(file.contents.toString(), filePath).results[0];
+			result = linter.lintText(file.contents.toString(), filePath).results[0];
 		} catch (e) {
 			cb(new PluginError('gulp-eslint', e));
 			return;
