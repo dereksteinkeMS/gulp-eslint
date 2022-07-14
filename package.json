@@ -1,8 +1,8 @@
 {
-	"name": "gulp-eslint",
-	"version": "7.0.0",
+	"name": "@dereksteinkeMS/gulp-eslint",
+	"version": "7.0.1",
 	"description": "A gulp plugin for processing files with ESLint",
-	"repository": "dereksteinke/gulp-eslint",
+	"repository": "dereksteinkeMS/gulp-eslint",
 	"files": [
 		"index.js",
 		"util.js"
