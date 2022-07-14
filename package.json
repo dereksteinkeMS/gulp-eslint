@@ -2,7 +2,7 @@
 	"name": "gulp-eslint",
 	"version": "7.0.0",
 	"description": "A gulp plugin for processing files with ESLint",
-	"repository": "adametry/gulp-eslint",
+	"repository": "dereksteinke/gulp-eslint",
 	"files": [
 		"index.js",
 		"util.js"
@@ -34,7 +34,7 @@
 		"lint",
 		"plugin"
 	],
-	"author": "Adametry",
+	"author": "dereksteinke",
 	"contributors": [
 		"Shinnosuke Watanabe <snnskwtnb@gmail.com> (https://github.com/shinnn)"
 	],
